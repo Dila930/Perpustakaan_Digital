@@ -24,17 +24,8 @@ HTML & CSS (Frontend)
 XAMPP(Local Development Server)
 
 Struktur Direktori
-Perpustakaan_Digital/
-│
-├── admin/                # Modul admin
-├── assets/               # File CSS dan aset pendukung
-├── config/               # Konfigurasi koneksi database
-├── user/                 # Modul pengguna
-├── index.php             # Halaman utama
-├── login.php             # Halaman login
-├── logout.php            # Proses logout
-├── register.php          # Halaman registrasi
-└── perpus_sekolah.sql    # File database
+<img width="417" height="246" alt="image" src="https://github.com/user-attachments/assets/7c6cbe25-03fd-4485-8e54-912776b0fa23" />
+
 
 ## Instalasi dan Konfigurasi
 1. Clone repository:
