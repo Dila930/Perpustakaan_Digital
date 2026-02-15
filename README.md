@@ -36,7 +36,7 @@ XAMPP(Local Development Server)
 ## Instalasi dan Konfigurasi
 1. Clone repository:
    git clone https://github.com/Dila930/Perpustakaan_Digital.git
-3. Pindahkan folder ke direktori htdocs (XAMPP) atau www (Laragon).
+3. Pindahkan folder ke direktori htdocs (XAMPP).
 4. Buat database baru di phpMyAdmin, misalnya:
    perpus_sekolah
 5. Import file:
