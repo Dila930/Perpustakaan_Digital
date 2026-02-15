@@ -1,4 +1,4 @@
-# Perpustakaan_Digital\
+# Perpustakaan_Digital
 Website Perpustakaan Digital berbasis PHP dan MySQL yang dirancang untuk memudahkan pengelolaan dan akses buku secara digital. Sistem ini mendukung peran admin dan pengguna dengan fitur manajemen data buku serta pencatatan riwayat transaksi.
 
 ## Deskripsi Sistem
@@ -9,7 +9,7 @@ Perpustakaan Digital merupakan sistem informasi berbasis web yang memungkinkan p
 4. Melihat riwayat transaksi/peminjaman
 5. Admin memiliki akses tambahan untuk mengelola data buku dan pengguna.
 
-##Fitur Utama
+## Fitur Utama
 1. Autentikasi (Login dan Register)
 2. Manajemen data buku
 3. Detail dan isi buku digital
@@ -17,7 +17,7 @@ Perpustakaan Digital merupakan sistem informasi berbasis web yang memungkinkan p
 5. Dashboard admin
 6. Database dengan data awal (sample data)
 
-##Teknologi yang Digunakan
+## Teknologi yang Digunakan
 PHP (Backend)
 MySQL (Database)
 HTML & CSS (Frontend)
@@ -36,7 +36,7 @@ Perpustakaan_Digital/
 ├── register.php          # Halaman registrasi
 └── perpus_sekolah.sql    # File database
 
-##Instalasi dan Konfigurasi
+## Instalasi dan Konfigurasi
 1. Clone repository:
    git clone https://github.com/Dila930/Perpustakaan_Digital.git
 3. Pindahkan folder ke direktori htdocs (XAMPP) atau www (Laragon).
