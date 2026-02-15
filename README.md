@@ -10,13 +10,10 @@ Perpustakaan Digital merupakan sistem informasi berbasis web yang memungkinkan p
 5. Admin memiliki akses tambahan untuk mengelola data buku dan pengguna.
 
 ## Gambaran Website
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/dc3ab1f1-f70b-46e1-af71-f57122e49a6f" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f7b0c760-62c1-489b-af21-ee2006d83f8f" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7856b09c-a5f9-4ccd-b974-b7da78871e1a" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/daabaa6c-04da-4cd8-a397-ca15d7ef6528" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2d9660c1-2916-45b8-b005-cd1df1ae9042" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/04a3fb6e-b9a5-453d-baf7-9c1a329ac9ab" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/fd3a996e-187f-4aee-8f52-148e7849fc1b" />
+![WhatsApp Image 2026-02-15 at 16 54 35](https://github.com/user-attachments/assets/dda76faf-a98c-4b34-8ca2-0c36549d10d3)
+![WhatsApp Image 2026-02-15 at 16 55 16](https://github.com/user-attachments/assets/efe853fe-26de-43ea-8e3f-a0c7dc9869ee)
+
+
 
 ## Fitur Utama
 1. Autentikasi (Login dan Register)
