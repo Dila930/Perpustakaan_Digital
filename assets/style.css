@@ -1,0 +1,229 @@
+/* ============================================================
+   🎨 1. VARIABLE SYSTEM (Pondasi Warna Dinamis)
+   ============================================================ */
+:root {
+    /* Mode Gelap (Default) */
+    --bg-body: #0f0f0f;
+    --bg-card: #1a1a1a;
+    --bg-input: #242424;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --border-color: #2d2d2d;
+    --nav-bg: #1a1a1a;
+    --primary-blue: #0d6efd;
+    --accent-shadow: rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode {
+    /* Mode Terang */
+    --bg-body: #f4f7f6;
+    --bg-card: #ffffff;
+    --bg-input: #ffffff;
+    --text-main: #212529;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --nav-bg: #ffffff;
+    --accent-shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================================
+   🌑 2. GLOBAL RESET & BASE STYLES
+   ============================================================ */
+body {
+    background-color: var(--bg-body) !important;
+    color: var(--text-main) !important;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Memastikan semua heading mengikuti warna tema */
+h1, h2, h3, h4, h5, h6, .fw-bold {
+    color: var(--text-main) !important;
+}
+
+/* ============================================================
+   🏢 3. CARD & COMPONENT SYSTEM (Admin & User)
+   ============================================================ */
+.card, .book-card, .stat-card, .bg-dark-card {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-main) !important;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s, border 0.4s;
+}
+
+/* Efek Hover untuk Card Buku */
+.book-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-blue) !important;
+    box-shadow: 0 10px 20px var(--accent-shadow) !important;
+}
+
+/* Stat Card di Admin Dashboard */
+.stat-card {
+    border-left: 5px solid var(--primary-blue) !important;
+}
+
+body.light-mode .stat-card {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+/* ============================================================
+   🧭 4. NAVIGATION & INPUTS
+   ============================================================ */
+.navbar {
+    background-color: var(--nav-bg) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding: 1rem 1.5rem;
+}
+
+.form-control {
+    background-color: var(--bg-input) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-main) !important;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+}
+
+.form-control:focus {
+    background-color: var(--bg-input) !important;
+    color: var(--text-main) !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: var(--primary-blue) !important;
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+/* ========================================= */
+/* 📊 ULTIMATE CLEAN TABLE (FORCE TRANSPARENT) */
+/* ========================================= */
+
+/* 1. Paksa semua elemen tabel jadi transparan */
+.table, 
+.table-responsive,
+.table > :not(caption) > * > *, 
+.table-hover tbody tr:hover > * {
+    background-color: transparent !important;
+    color: var(--text-main) !important;
+    box-shadow: none !important;
+}
+
+/* 2. Header Tabel */
+.table thead th {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-bottom: 2px solid var(--border-color) !important;
+    color: var(--text-main) !important;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 15px !important;
+}
+
+/* 3. Body Tabel */
+.table tbody td {
+    border-bottom: 1px solid var(--border-color) !important;
+    padding: 15px !important;
+}
+
+/* 4. Perbaikan Teks Muted (Tgl & Pengarang) */
+.table .text-muted, 
+.table .text-secondary {
+    color: var(--text-muted) !important;
+}
+
+/* 5. Khusus Mode Terang */
+body.light-mode .table thead th {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Khusus Mode Terang: Header sedikit abu-abu agar terbaca */
+body.light-mode .table thead th {
+    background-color: rgba(0,0,0,0.03) !important;
+    color: #212529 !important;
+}
+/* ============================================================
+   📖 6. READER MODE & BOOK COVERS
+   ============================================================ */
+.cover-box {
+    background: linear-gradient(135deg, #2c2c2c 0%, #000000 100%);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+}
+
+body.light-mode .cover-box {
+    background: #e9ecef !important;
+}
+
+.reader-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* ============================================================
+   🔘 7. UTILITIES
+   ============================================================ */
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+.badge {
+    padding: 0.5em 0.8em;
+    border-radius: 6px;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:active {
+    transform: scale(0.9);
+}
+
+
+.feature-card {
+        transition: all 0.3s ease;
+        border-radius: 15px;
+    }
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+    }
+    .stat-circle {
+        transition: all 0.3s ease;
+    }
+    .feature-card:hover .stat-circle {
+        transform: scale(1.1);
+    }
+
+
+/* dark map */
+.dark .map-container iframe {
+        /* invert(90%): membalik warna agar gelap 
+           hue-rotate(180deg): mengembalikan spektrum warna biru agar tidak hilang
+           brightness(105%): memberi sedikit cahaya putih pada teks/jalan
+           contrast(90%): menjaga kedalaman warna
+        */
+        filter: invert(90%) hue-rotate(180deg) brightness(105%) contrast(90%) saturate(120%);
+        border: 2px solid rgba(13, 110, 253, 0.2); /* Sedikit border biru transparan */
+    }
+
+    /* Efek Glow Biru Halus pada Container Map saat Dark Mode */
+    .dark .map-container {
+        box-shadow: 0 0 20px rgba(13, 110, 253, 0.15) !important;
+    }
+
+    .map-container iframe {
+        transition: all 0.4s ease-in-out;
+    }
